@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 
 body{
-    background : #98FF98;
-    
+    background: #FFCFF7;
   }
-  
+
   .tab{
       overflow: hidden;
       background-color: white;
-      position: fixed; 
+      position: absolute;
       width: 100%;
       border-style: solid;
   }
-  
+
   .tab img{
       width: 100px;
       float:left;
   }
-  
+
   .tab a{
       float: left;
     display: block;
@@ -28,7 +29,7 @@ body{
     padding: 20px 20px;
     text-decoration: none;
   }
-  
+
   .tab a:hover{
       background: #ddd;
       color: black;
@@ -37,20 +38,39 @@ body{
       background-color: #4CAF50;
       color: black;
     }
-    
+
   .tab .icon {
       display: none;
     }
-  
-    @media screen and (max-width: 600px) {
+    .tab img{
+          left: 50%;
+          top: 50%
+      }
+    @media only screen and (max-width:360px) and (max-width:762px) {
       .tab a:not(:first-child) {display: none;}
       .tab a.icon {
         float: right;
         display: block;
       }
     }
-    
-  @media screen and (max-width: 600px) {
+
+     @media only screen and (max-width:411px) {
+      .tab a:not(:first-child) {display: none;}
+      .tab a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media only screen and (max-width:412px) {
+      .tab a:not(:first-child) {display: none;}
+      .tab a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+  @media only screen and (max-width:360px) and (max-width:762px){
       .tab.responsive {position: relative;}
       .tab.responsive .icon {
         position: absolute;
@@ -65,22 +85,58 @@ body{
         color: black;
       }
       }
-      .tab img{
-          left: 50%;
-          top: 50%
+
+      @media only screen and (max-width:411px) {
+      .tab.responsive {position: relative;}
+      .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline;
       }
+      .tab.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+      }
+  }
+
+  @media only screen and (max-width:412px) {
+      .tab.responsive {position: relative;}
+      .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline;
+      }
+      .tab.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+      }
+  }
+
 
       .head h1{
         text-align: center;
         font-size: 72px;
-        font-family: 'Staatliches', cursive;
-        font-style: oblique;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
       }
 
       .post h2{
-          text-transform: capitalize;
+          text-transform: uppercase;
           font-size: 48px;
-          font-family: 'Staatliches', cursive;
+          font-family: 'Quicksand', sans-serif;
+          text-align: left;
+      }
+      .post h4{
+          text-transform: uppercase;
+          font-size: 40px;
+          font-family: 'Quicksand', sans-serif;
+          text-align: center;
       }
 
       .post img {
@@ -96,6 +152,135 @@ body{
       }
 
       .post h3{
-        font-size: 32px;
-        font-family: 'Staatliches', cursive;
+        font-size: 20px;
+        font-family: 'Didact Gothic', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+@media screen and (max-width:360px) and (max-width:762px) {
+    .head h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .post h2{
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 30px;
+          font-family: 'Quicksand', sans-serif;
+          text-transform : uppercase;
+      }
+
+      .post img {
+        width: 302px;
+        height: 302px;
+        background-repeat: no-repeat;
+      }
+
+      .post p{
+        font-size: 18px;
+        font-family: 'Didact Gothic', sans-serif;
+        text-align: center;
+      }
+
+      .post h3{
+        font-size: 18px;
+        font-family: 'Didact Gothic', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+        .post h4{
+          text-transform: uppercase;
+          font-size: 25px;
+          font-family: 'Quicksand', sans-serif;
+          text-align: center;
+      }
+      }
+
+             @media screen and (max-width:411px) {
+    .head h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .post h2{
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 30px;
+          font-family: 'Quicksand', sans-serif;
+          text-transform : uppercase;
+      }
+
+      .post img {
+        width: 302px;
+        height: 302px;
+        background-repeat: no-repeat;
+      }
+
+      .post p{
+        font-size: 18px;
+        font-family: 'Didact Gothic', sans-serif;
+      }
+
+      .post h3{
+        font-size: 18px;
+        font-family: 'Didact Gothic', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+        .post h4{
+          text-transform: uppercase;
+          font-size: 25px;
+          font-family: 'Quicksand', sans-serif;
+          text-align: center;
+      }
+      }
+
+      @media screen and (max-width:412px) {
+    .head h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .post h2{
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 30px;
+          font-family: 'Quicksand', sans-serif;
+          text-transform : uppercase;
+      }
+
+      .post img {
+        width: 302px;
+        height: 302px;
+        background-repeat: no-repeat;
+      }
+
+      .post p{
+        font-size: 18px;
+        font-family: 'Didact Gothic', sans-serif;
+      }
+
+      .post h3{
+        font-size: 18px;
+        font-family: 'Didact Gothic', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+        .post h4{
+          text-transform: uppercase;
+          font-size: 25px;
+          font-family: 'Quicksand', sans-serif;
+          text-align: center;
+      }
       }

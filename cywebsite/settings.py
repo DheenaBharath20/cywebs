@@ -25,7 +25,7 @@ SECRET_KEY = 'xm62o)_o$n_wwo12tb6%$blsq%!%1s(nu0cg=@r2c_#g)971!&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','blandus742.pythonanywhere.com']
 
 
 # Application definition
@@ -38,10 +38,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'educationalaid',
+    'school_restoration',
+    'awarenessprogram',
+    'tuitioncentres',
+    'skilldevprog',
+    'plantation',
+    'greenclub',
+    'wastemanagement',
+    'cleanup',
+    'envworkshop',
     'about',
-    'karpipom',
-    'kaapom',
-    'vidhaipom',
     'members',
     'donate',
     'volunteer',
@@ -49,6 +56,8 @@ INSTALLED_APPS = [
     'contact',
 ]
 
+PAYPAL_TEST = True
+PAYPAL_RECEIVER_MAIL="bharathkuppu2000@gmail.com"
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

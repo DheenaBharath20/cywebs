@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <link href="{% static 'mysite/css/vidhaipom.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'mysite/css/others.css' %}" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -18,14 +18,14 @@
     </head>
     <body>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    
+
         <script src="{% static 'mysite/js/menu.js' %}"></script>
         <div class="tab" id="myTab">
-          <a href=""><img src="{% static 'mysite/img/cypng.png' %}">&nbsp;&nbsp;</a>
+          <a href="/home/"><img src="{% static 'mysite/img/cypng.png' %}">&nbsp;&nbsp;</a>
           <a href="/about/">About</a>
-          <a href="/karpipom/">Karpipom</a>
-          <a href="/kaapom/">Kaapom</a>
-          <a href="/vidhaipom/">Vidhaipom</a>
+          <a href="/edu/">Education</a>
+          <a href="/env/">Environment</a>
+          <a href="/soc/">Social Welfare</a>
           <a href="/others/">Others</a>
           <a href="/members/">Members</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbTY4DXamVF2o9NKwWtbivj3B-zajR8SeUzFBooOnKMpQzjQ/viewform">Join Us</a>
@@ -42,7 +42,7 @@
           </div>
           <br><br><br><br><br>
           <ul>
-              <div class= "post"> 
+              <div class= "post">
           {% for others in object_list %}
           <h2>{{ others.title }}</h2>
           <br><br>

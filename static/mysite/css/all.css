@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+.body{
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.heading h1{
+
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 5%;
+    text-transform: capitalize;
+
+}
+
+.heading p{
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  text-align: justify;
+  font-style: normal;
+  font-size: 16px;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+
+#myCarousel .list-inline {
+  white-space:nowrap;
+  overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+  position: static;
+  left: initial;
+  width: initial;
+  margin-left: initial;
+}
+
+#myCarousel .carousel-indicators > li {
+  width: initial;
+  height: initial;
+  text-indent: initial;
+}
+
+#myCarousel .carousel-indicators > li.active img {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px)
+{.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-top: 20%;
+}}
+
+.carousel-caption{
+  right: 20%;
+  left: -53%;
+  bottom: -114%;
+}
+
+
+
+.tab{
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    border-style: solid;
+}
+
+.tab img{
+    width: 100px;
+    float:left;
+}
+
+.tab a{
+    float: left;
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.tab a:hover{
+    background: #ddd;
+    color: black;
+}
+.tab a.active {
+    background-color: #4CAF50;
+    color: black;
+  }
+
+.tab .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .tab a:not(:first-child) {display: none;}
+    .tab a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .tab.responsive {position: relative;}
+    .tab.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline;
+    }
+    .tab.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      color: black;
+    }
+    }
+    .tab img{
+        left: 50%;
+        top: 50%
+    }
+
+
+
+  ul{
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 1px;
+  }
+
+
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+    position: relative;
+    left: -80rem;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px)
+{
+#lightbox .modal-content
+{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 0rem;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 575px)
+{
+#lightbox .modal-content
+{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 0rem;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width: 639px)
+{
+#lightbox .modal-content
+{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 2rem;
+}
+}
+
+
+@media screen and (min-width: 641px) and (max-width:767px)
+{
+#lightbox .modal-content
+{
+    display: inline-block;
+    text-align: center;
+}
+}
+
+
+
+
+
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
+}
