@@ -1,80 +1,159 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body{
-    background:#F75D59;
-}
+    background : #FF9933;
 
-.tab{
-    overflow: hidden;
-    background-color: white;
-    position: fixed; 
-    width: 100%;
-    border-style: solid;
-}
-
-.tab img{
-    width: 100px;
-    float:left;
-}
-
-.tab a{
-    float: left;
-  display: block;
-  color: black;
-  text-align: left;
-  padding: 20px 20px;
-  text-decoration: none;
-}
-
-.tab a:hover{
-    background: #ddd;
-    color: black;
-}
-.tab a.active {
-    background-color: #4CAF50;
-    color: black;
-  }
-  
-.tab .icon {
-    display: none;
   }
 
-  @media screen and (max-width: 600px) {
-    .tab a:not(:first-child) {display: none;}
-    .tab a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-@media screen and (max-width: 600px) {
-    .tab.responsive {position: relative;}
-    .tab.responsive .icon {
+  .tab{
+      overflow: hidden;
+      background-color: white;
       position: absolute;
-      right: 0;
-      top: 0;
-      display: inline;
-    }
-    .tab.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+      width: 100%;
+      border-style: solid;
+  }
+
+  .tab img{
+      width: 100px;
+      float:left;
+  }
+
+  .tab a{
+      float: left;
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+
+  .tab a:hover{
+      background: #ddd;
+      color: black;
+  }
+  .tab a.active {
+      background-color: #4CAF50;
       color: black;
     }
+
+  .tab .icon {
+      display: none;
     }
     .tab img{
-        left: 50%;
-        top: 50%
+          left: 50%;
+          top: 50%
+      }
+    @media only screen and (max-width:360px) and (max-width:762px) {
+      .tab a:not(:first-child) {display: none;}
+      .tab a.icon {
+        float: right;
+        display: block;
+      }
     }
 
-    .head h1{
+    @media only screen and (max-width:411px) {
+      .tab a:not(:first-child) {display: none;}
+      .tab a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media only screen and (max-width:412px) {
+      .tab a:not(:first-child) {display: none;}
+      .tab a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+
+  @media only screen and (max-width:360px) and (max-width:762px) {
+      .tab.responsive {position: relative;}
+      .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline;
+      }
+      .tab.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+      }
+  }
+
+   @media only screen and (max-width:411px) {
+      .tab.responsive {position: relative;}
+      .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline;
+      }
+      .tab.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+      }
+  }
+
+  @media only screen and (max-width:412px) {
+      .tab.responsive {position: relative;}
+      .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline;
+      }
+      .tab.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+      }
+  }
+
+  .head h1{
         text-align: center;
-        font-size: 72px;
-        font-family: 'Staatliches', cursive;
-        font-style: oblique;
+        font-size: 36px;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
       }
 
+@media screen and (max-width:360px) and (max-width:762px) {
+    .head h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+      }
+}
+
+
+
+@media screen and (max-width:411px) {
+    .head h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+      }
+}
+
+
+@media screen and (max-width:412px) {
+    .head h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+      }
+}
 /*********************** Demo - 1 *******************/
 .box1 img,.box1:after,.box1:before{width:100%;transition:all .3s ease 0s}
 .box1 .icon,.box2,.box3,.box4,.box5 .icon li a{text-align:center}
@@ -543,7 +622,7 @@ body{background-color:#F75D59}
     font-weight: 700;
 }
 .subscribe-form button {
-  
+
     margin-top: 10px;
     right: 0;
     font-size: 24px;

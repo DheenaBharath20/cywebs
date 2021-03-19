@@ -1,13 +1,14 @@
-
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
 
 body{
-  font-family: 'Roboto', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    background: #29285d;
 }
 
 .tab{
     overflow: hidden;
     background-color: white;
-    position: fixed; 
+    position: absolute;
     width: 100%;
     border-style: solid;
 }
@@ -34,11 +35,84 @@ body{
     background-color: #4CAF50;
     color: black;
   }
-  
+
 .tab .icon {
     display: none;
   }
 
+
+ @media only screen and (max-width:360px) and (max-width:762px) {
+      .tab a:not(:first-child) {display: none;}
+      .tab a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media only screen and (max-width:411px) {
+      .tab a:not(:first-child) {display: none;}
+      .tab a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media only screen and (max-width:412px) {
+      .tab a:not(:first-child) {display: none;}
+      .tab a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+
+  @media only screen and (max-width:360px) and (max-width:762px) {
+      .tab.responsive {position: relative;}
+      .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline;
+      }
+      .tab.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+      }
+  }
+
+   @media only screen and (max-width:411px) {
+      .tab.responsive {position: relative;}
+      .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline;
+      }
+      .tab.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+      }
+  }
+
+  @media only screen and (max-width:412px) {
+      .tab.responsive {position: relative;}
+      .tab.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline;
+      }
+      .tab.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+      }
+  }
   @media screen and (max-width: 600px) {
     .tab a:not(:first-child) {display: none;}
     .tab a.icon {
@@ -46,7 +120,7 @@ body{
       display: block;
     }
   }
-  
+
 @media screen and (max-width: 600px) {
     .tab.responsive {position: relative;}
     .tab.responsive .icon {
@@ -66,7 +140,7 @@ body{
         left: 50%;
         top: 50%
     }
-  
+
     .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
@@ -117,11 +191,11 @@ body{
 
 .section-white {
    left: 200px;
-   padding: 10px 0;
+   padding: 2px 0;
 }
 
 .section-white {
-  background-color: #fff;
+  background-color: #29285d;
   color: #555;
 }
 
@@ -132,7 +206,7 @@ body{
   }
 
 }
-    
+
 
   .button5 {
     width: 150px;
@@ -141,36 +215,56 @@ body{
     color: black;
     border: 2px solid #555555;
   }
-  
+
   .button5:hover {
     background-color: #555555;
     color: white;
   }
+
   .program h1{
-    top: 320px;
     position: relative;
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
   }
 
   .how-section1{
-    margin-top:15%;
-    padding: 10%;
+    padding: 5%;
 }
 .how-section1 h4{
     color: #ffa500;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 26px;
 }
+
+.how-section1 h4: link{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.how-section1 h4: hover{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.how-section1 h4: active{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 26px;
+}
+
 .how-section1 .subheading{
     color: #3931af;
-    font-size: 20px;
+    font-size: 18px;
 }
 .how-section1 .row
 {
     margin-top: 10%;
 }
-.how-img 
+.how-img
 {
     text-align: center;
 }
@@ -180,50 +274,131 @@ body{
 
 @media screen and (max-width: 600px) {
   .how-section1{
-    margin-top: 55%;
+    padding: 10%;
   }
 
 }
 
-
-.border-5, .border-w-5 {
-  border-width: 5px !important;
-}
-.border-white {
-  border: 1px solid transparent;
-  border-color: #fff !important;
-}
-hr.hr-primary {
-  border-top-color: #CC164D!important;
-}
-em {
-  font-style: italic;
-}
-.font-weight-normal {
-  font-weight: 400 !important;
+.text-light {
+    color: #f8f9fa!important;
+    font-family: system-ui;
 }
 
-.btn-block{
-  width: 30px;
-  height: 20%;
+
+section {
+    background: #29285d;
+    border-radius: 25px;
 }
 
-.my-card
-{
-    position:absolute;
-    left:40%;
-    top:-20px;
-    border-radius:50%;
+.testy h1{
+    top: 35px;
+    position: relative;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
 }
+.quote {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "system-ui";
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #e84a64;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+    color: white;
+    font-family: "system-ui";
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center;
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #909090;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color: #d2d2d2;
+}
+
+.counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  line-height: 28px;
+}
+
+.counter-box.colored {
+  background: #3acf87;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+  color: #fff;
+}
+
 
 footer{
   background-color: #33383c;
   padding:70px 0px;
-}	       
+}
 
 .adress span , .contact span , .social span{
-color: #FFF; 
-font-weight: 800; 
+color: #FFF;
+font-weight: 800;
 padding:20px 0px;
 display: block;
 text-transform: uppercase;

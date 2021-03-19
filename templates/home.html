@@ -15,26 +15,33 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="{% static 'mysite/js/menu.js' %}"></script>
+        <script src="{% static 'mysite/js/testy.js' %}"></script>
+        <script src="{% static 'mysite/js/sub.js' %}"></script>
         <div class="tab" id="myTab">
-            <a href=""><img src="{% static 'mysite/img/cypng.png' %}">&nbsp;&nbsp;</a>
-            <a href="/about/">About</a>
-            <a href="/karpipom/">Karpipom</a>
-            <a href="/kaapom/">Kaapom</a>
-            <a href="/vidhaipom/">Vidhaipom</a>
-            <a href="/others/">Others</a>
-            <a href="/members/">Members</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbTY4DXamVF2o9NKwWtbivj3B-zajR8SeUzFBooOnKMpQzjQ/viewform">Join Us</a>
-            <a href="/volunteer/">Volunteer</a>
-            <a href="/donate/">Donate</a>
-            <a href="/contact/">Contact us</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars" aria-hidden = "true"></i>
-            </a>
-        </div>
+          <a href="/home/"><img src="{% static 'mysite/img/cypng.png' %}">&nbsp;&nbsp;</a>
+          <a href="/about/">About</a>
+          <a href="/edu/">Education</a>
+          <a href="/env/">Environment</a>
+          <a href="/soc/">Social Welfare</a>
+          <a href="/others/">Others</a>
+          <a href="/members/">Members</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbTY4DXamVF2o9NKwWtbivj3B-zajR8SeUzFBooOnKMpQzjQ/viewform">Join Us</a>
+          <a href="/volunteer/">Volunteer</a>
+          <a href="/donate/">Donate</a>
+          <a href="/contact/">Contact us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" aria-hidden = "true"></i>
+          </a>
+      </div>
         <br><br><br><br><br><br><br><br>
         <section class="section-white">
           <div class="container">
@@ -47,16 +54,16 @@
                 <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="4"></li>
               </ol>
-        
+
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
                   <img src="{% static 'mysite/img/aaa.jpg' %}" alt="...">
-                  
+
                 </div>
                 <div class="item">
                   <img src="{% static 'mysite/img/bbb.jpg' %}" alt="...">
-                  
+
                 </div>
                 <div class="item">
                   <img src="{% static 'mysite/img/fff.jpg' %}" alt="...">
@@ -70,7 +77,7 @@
                   <img src="{% static 'mysite/img/777.jpg' %}" alt="...">
                 </div>
               </div>
-        
+
               <!-- Controls -->
               <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -78,25 +85,24 @@
               <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
               </a>
-            </div>
-        
+                </div>
           </div>
         </section>
-        
-        <br><br><br>
+        <br>
         <div class="program">
             <h1>PROGRAMMES</h1>
-        </div>
+        </div
+        <br><br><br>
         <div class="how-section1">
             <div class="karpipom">
             <div class="row">
                 <div class="col-md-6 how-img">
-                    <img src="{% static 'mysite/img/karpipom.jpg' %}" class="rounded-circle img-fluid" alt=""/>
+                    <img src="{% static 'mysite/img/Education PNG.jpg' %}" class="rounded-circle img-fluid" alt=""/>
                 </div>
                 <div class="col-md-6">
-                    <h4>KARPIPOM - கற்பிப்போம்.</h4>
-                <p class="text-muted">KARPIPOM deals with helping students in creating a bright future for themselves
-                     and mentoring them in their interested career choices. 
+                <h4><a href='/edu/'>EDUCATION - கல்வி.</a></h4>
+                <p class="text-light">KARPIPOM deals with helping students in creating a bright future for themselves
+                     and mentoring them in their interested career choices.
                      It also deals with various academic motivation to the upcoming students. </p>
                 </div>
             </div>
@@ -104,26 +110,26 @@
             <div class="kaapom">
             <div class="row">
                 <div class="col-md-6 how-img">
-                    <img src="{% static 'mysite/img/kaapom.jpg' %}" class="rounded-circle img-fluid" alt=""/>
+                    <img src="{% static 'mysite/img/Environment PNG.jpg' %}" class="rounded-circle img-fluid" alt=""/>
                 </div>
                 <div class="col-md-6">
-                    <h4>KAAPOM - காப்போம்.</h4>
-                                
-                                <p class="text-muted">KAAPOM deals with the rehabilitation of abandoned people 
-                                    and helping senior members 
+                    <h4><a href='/env/'>ENVIRONMENT - சுற்றுச்சூழல்.</a></h4>
+
+                                <p class="text-light">KAAPOM deals with the rehabilitation of abandoned people
+                                    and helping senior members
                                     of our society with their medical and basic essentials. </p>
                 </div>
               </div>
             </div>
             <div class="row">
                 <div class="col-md-6 how-img">
-                     <img src="{% static 'mysite/img/vidhaipom.jpg' %}" class="rounded-circle img-fluid" alt=""/>
+                     <img src="{% static 'mysite/img/CW.jpg' %}" class="rounded-circle img-fluid" alt=""/>
                 </div>
                 <div class="col-md-6">
-                    <h4>VIDHAIPOM - விதைப்போம்.</h4>
-                                
-                                <p class="text-muted">VIDHAIPOM deals with the environmental changes and care that 
-                                    is needed to make our surroundings a better place to be in. 
+                    <h4><a href = '/soc/'>SOCIAL WELFARE - சமூக நல சேவை</a></h4>
+
+                                <p class="text-light">VIDHAIPOM deals with the environmental changes and care that
+                                    is needed to make our surroundings a better place to be in.
                                     Helping the nature to be loved and lived.</p>
                 </div>
             </div>
@@ -131,28 +137,30 @@
             <div class="container py-7">
                 <div class="row mb-5">
                   <div class="col-md-6 order-md-2">
-                    <img src="{% static 'mysite/img/fff.jpg' %}" alt="Personal Trainer 1" class="rounded-circle img-fluid">
+                    <img src="{% static 'mysite/img/fff.jpg' %}" alt="Personal Trainer 1" class="img-fluid">
                   </div>
                   <div class="col-md-6 flex-valign text-right">
-                    <h3 class="text-uppercase text-letter-spacing-xs mt-0 mb-1 text-dark font-weight-bold">
+                      <br>
+                    <h3 class="text-uppercase text-letter-spacing-xs mt-0 mb-1 text-light font-weight-bold">
                       MISSION
                     </h3>
-                    <hr class="hr-primary w-70 ml-0 ml-md-auto mr-md-0 mb-3">
-                    <p>To bring sustainable development by taking steps for eradicating
-                        environmental stability and providing educational services.</p>
-               
+                    <hr class="hr-primary w-70 ml-0 ml-md-auto mr-md-0 mb-3 text-light">
+                    <p class= "text-light" font-family="system-ui">To bring sustainable development by taking steps for eradicating
+                        environmental crisis and providing educational services.</p>
+
                   </div>
                 </div>
                 <div class="row mb-5">
                   <div class="col-md-6 text-md-right">
-                    <img src="{% static 'mysite/img/ddd.jpg' %}" alt="Personal Trainer 2" class="rounded-circle img-fluid">
+                    <img src="{% static 'mysite/img/ddd.jpg' %}" alt="Personal Trainer 2" class="img-fluid">
                   </div>
                   <div class="col-md-6 flex-valign">
-                    <h3 class="text-uppercase text-letter-spacing-xs mt-0 mb-1 text-dark font-weight-bold">
+                      <br>
+                    <h3 class="text-uppercase text-letter-spacing-xs mt-0 mb-1 text-light font-weight-bold">
                       VISION
                     </h3>
-                    <hr class="hr-primary w-70 ml-0 mb-3">
-                    <p>We envision the strong world by shaping the future of students by 
+                    <hr class="hr-primary w-70 ml-0 mb-3 text-light">
+                    <p class= "text-light">We envision the strong world by shaping the future of students by
                         creating right learning opportunities and development to attain excellent education.</p>
                   </div>
                 </div>
@@ -160,68 +168,121 @@
               <br><br><br>
                 <p><button class="w3-button w3-round w3-block w3-black" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfiRNdGH-ELYDzP2lkDdd2AifEMs81qRXpp5i2P1tFnMxuozA/viewform';">BE A PART OF OUR FAMILY</button>
               <br><br><br>
-            <div class="jumbotron">
-            <div class="row w-100">
-            <div class="col-md-3">
-                <div class="card border-info mx-sm-1 p-3">
-                    <div class="w3-xxxlarge" ><span class="fa fa-user" aria-hidden="true"></span></div>
-                    <div class="text-info text-center mt-3"><h4>Volunteers</h4></div>
-                    <div class="text-info text-center mt-2"><h1>500+</h1></div>
-                </div>
+              <section id="carousel">
+                  <div class="testy">
+                      <h1>TESTIMONIALS</h1>
+                  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+				  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+				    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+				    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+				    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    </div>
+				    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+				    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    </div>
+				    <div class="active item">
+                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+				    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    </div>
+                    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+    			    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    </div>
+                    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+    			    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    </div>
+                    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+    			    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+           <div class="container">
+    <div class="row">
+        <div class="four col-md-3">
+            <div class="counter-box"> <i class="fa fa-check-circle-o"></i> <span class="counter">110</span>
+                <p>NUMBER OF EVENTS</p>
             </div>
-            <div class="col-md-3">
-                <div class="card border-success mx-sm-1 p-3">
-                    <div class="w3-xxxlarge"><span class="fa fa-check" aria-hidden="true"></span></div>
-                    <div class="text-success text-center mt-3"><h4>Events</h4></div>
-                    <div class="text-success text-center mt-2"><h1>50+</h1></div>
-                </div>
+        </div>
+        <div class="four col-md-3">
+            <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter">1000</span>
+                <p>VOLUNTEERS COUNT</p>
             </div>
-            <div class="col-md-3">
-                <div class="card border-danger mx-sm-1 p-3">
-                    <div class="w3-xxxlarge" ><span class="fa fa-clock-o" aria-hidden="true"></span></div>
-                    <div class="text-danger text-center mt-3"><h4>Hours of Service</h4></div>
-                    <div class="text-danger text-center mt-2"><h1>13410+</h1></div>
-                </div>
+        </div>
+        <div class="four col-md-3">
+            <div class="counter-box"> <i class="fa fa-handshake-o"></i> <span class="counter">19272</span></span>
+                <p>HOURS OF SERVICE</p>
             </div>
-            <div class="col-md-3">
-                <div class="card border-warning mx-sm-1 p-3">
-                    <div class="w3-xxxlarge"><span class="fa fa-heart" aria-hidden="true"></span></div>
-                    <div class="text-warning text-center mt-3"><h4>Love We Received</h4></div>
-                    <div class="text-warning text-center mt-2"><h1>∞</h1></div>
-                </div>
+        </div>
+        <div class="four col-md-3">
+            <div class="counter-box"> <i class="fa fa-heart"></i><span class="counter">999999</span></span>
+                <p>LOVE WE RECEIVED</p>
             </div>
-         </div>
+        </div>
     </div>
+</div>
     <footer>
       <div class="container">
          <div class="row">
                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                       <ul class="adress">
-                           <span>ADDRESS</span>    
+                           <span>ADDRESS</span>
                            <li>
                               <p>No.56 Ramanujam 6th Cross street , Gandhinagar, Avadi, Chennai, 600054</p>
                             </li>
-                                 
+
                             <li>
                               <p>+91 93458 51641</p>
                             </li>
-                                 
+
                             <li>
                               <p><a href="mailto:chennaiyoungsters@gmail.com">chennaiyoungsters@gmail.com</a></p>
                             </li>
                        </ul>
                   </div>
-                  
+
                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                       <ul class="contact">
-                           <span>Contact</span>    
+                           <span>Contact</span>
                            <li>
                               <a href="/home/">Home</a>
-                            </li>                                 
+                            </li>
                             <li>
                                <a href="/about/">About</a>
-                            </li>                                   
-                           
+                            </li>
+
                            <li>
                             <a href="/members/">Members</a>
                          </li>
@@ -230,11 +291,11 @@
                        </li>
                       </ul>
                   </div>
-                  
-                  
+
+
                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                       <ul class="contact">
-                           <span>Blogs</span>    
+                           <span>Blogs</span>
                            <li>
                               <a href="/karpipom/">KARPIPOM</a>
                             </li>
@@ -246,10 +307,10 @@
                             </li>
                       </ul>
                   </div>
-             
+
                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                      <ul class="social">
-                                <span>Social</span>    
+                                <span>Social</span>
                                  <li>
                                       <a href="https://www.facebook.com/chennaiyoungsters19/"><i class="fa fa-facebook fa-2x"></i></a>
                                  </li>
@@ -264,7 +325,7 @@
                                   </li>
                        </ul>
                  </div>
-          </div> 
+          </div>
       </div>
    </footer>
   </body>

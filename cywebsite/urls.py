@@ -22,16 +22,22 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('home/', include('home.urls')),
+    path('educationalaid/', include('educationalaid.urls')),
+    path('awarenessprogram/', include('awarenessprogram.urls')),
+    path('tuitioncentres/',include('tuitioncentres.urls')),
+    path('skilldevprog/',include('skilldevprog.urls')),
+    path('plantation/', include('plantation.urls')),
+    path('greenclub/', include('greenclub.urls')),
+    path('wastemanagement/', include('wastemanagement.urls')),
+    path('cleanup/', include('cleanup.urls')),
+    path('envworkshop/', include('envworkshop.urls')),
     path('about/', include('about.urls')),
-    path('karpipom/', include('karpipom.urls')),
-    path('kaapom/', include('kaapom.urls')),
-    path('vidhaipom/', include('vidhaipom.urls')),
     path('members/', include('members.urls')),
     path('donate/', include('donate.urls')),
     path('volunteer/', include('volunteer.urls')),
     path('others/', include('others.urls')),
     path('contact/', include('contact.urls')),
-    
+
 ]
 
 if settings.DEBUG:

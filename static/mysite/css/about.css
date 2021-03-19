@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     background:white;
   }
-  
+
   .tab{
       overflow: hidden;
       background-color: white;
-      position: fixed; 
+      position: absolute;
       width: 100%;
       border-style: solid;
   }
-  
+
   .tab img{
       width: 100px;
       float:left;
   }
-  
+
   .tab a{
       float: left;
     display: block;
@@ -24,7 +26,7 @@ body{
     padding: 20px 20px;
     text-decoration: none;
   }
-  
+
   .tab a:hover{
       background: #ddd;
       color: black;
@@ -33,20 +35,20 @@ body{
       background-color: #4CAF50;
       color: black;
     }
-    
+
   .tab .icon {
       display: none;
     }
-  
-    @media screen and (max-width: 600px) {
+
+    @media screen and (max-width: 768px) {
       .tab a:not(:first-child) {display: none;}
       .tab a.icon {
         float: right;
         display: block;
       }
     }
-    
-  @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 768px) {
       .tab.responsive {position: relative;}
       .tab.responsive .icon {
         position: absolute;
@@ -70,7 +72,7 @@ body{
         padding: 80px 0;
         background: #19beda;
         }
-        
+
         .newsletter .content {
         max-width: 650px;
         margin: 0 auto;
@@ -93,7 +95,7 @@ body{
         border: 2px solid #243c4f;
         }
         .newsletter .content .btn {
-        min-height: 50px; 
+        min-height: 50px;
         border-radius:0;
         background: #243c4f;
         color: #fff;
@@ -137,12 +139,12 @@ section .section-title{
 }
 #what-we-do .card .card-block a i{
 	display:none;
-	
+
 }
 #what-we-do .card:hover .card-block a i{
 	display:inline-block;
 	font-weight:700;
-	
+
 }
 #what-we-do .card .card-block:before{
 	font-family: FontAwesome;
@@ -169,30 +171,57 @@ section .section-title{
     content: "\f0ac";
 }
 #what-we-do .card .block-6:before{
-    content: "\f505";
+    content: "\f21d";
 }
 #what-we-do .card:hover .card-block:before{
 	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);	
+	transform: rotate(360deg);
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
 }
 
-.gal-item{
-	overflow: hidden;
-	padding: 8px;
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
-.gal-item .box{
-	height: 100%;
-	overflow: hidden;
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
-.box img{
-	height: 100%;
-	width: auto;
-  object-fit:cover;
-  overflow: hidden;
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 
 .timeline {
     list-style: none;
@@ -243,11 +272,11 @@ section .section-title{
   .timeline > li:not(.timeline-inverted) + li.timeline-inverted {
   margin-top: -60px;
   }
-  
+
   .timeline > li:not(.timeline-inverted) {
   padding-right:90px;
   }
-  
+
   .timeline > li.timeline-inverted {
   padding-left:90px;
   }
@@ -346,7 +375,7 @@ section .section-title{
     font-weight: 700;
 }
 .subscribe-form button {
-  
+
     margin-top: 10px;
     right: 0;
     font-size: 24px;
@@ -374,37 +403,36 @@ section .section-title{
 footer{
     background-color: #33383c;
     padding:70px 0px;
-  }	       
-  
+  }
+
   .adress span , .contact span , .social span{
-  color: #FFF; 
-  font-weight: 800; 
+  color: #FFF;
+  font-weight: 800;
   padding:20px 0px;
   display: block;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 3px;
   }
-  
+
   .adress li , .contact li , .social li {
    padding:5px 0px;
    list-style: none;
   }
-  
+
   .adress li p , .contact li a , .social li a{
    color:#FFF;
    letter-spacing: 2px;
    text-decoration:none;
    font-size:14px;
   }
-  
+
   .social li{
    float:left;
   }
-  
+
   .social .fa{
    color:#9c9c9c;
    margin-right: 10px;
    font-size:22px;
   }
-  

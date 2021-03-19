@@ -1,7 +1,12 @@
 from django.urls import path
-from home import views
+from home.views import education, environment, home, socialwelfare
+
 
 app_name = 'home'
+
 urlpatterns = [
-    path('',views.home, name='home'),
+    path('edu/',education, name='edu'),
+    path('',home, name='home'),
+    path('env/',environment, name='env'),
+    path('soc/',socialwelfare, name='socwel'),
 ]
