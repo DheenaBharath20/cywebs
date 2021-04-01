@@ -1,9 +1,15 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-body{
-    font-family: "Open Sans", sans-serif;
-    background: #29285d;
+
+.body{
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  background: #29285d;
 }
+ 
 
 .tab{
     overflow: hidden;
@@ -238,19 +244,20 @@ body{
     font-size: 26px;
 }
 
-.how-section1 h4: link{
+.how-section1 h4:link
+{
     color: #ffa500;
     font-weight: bold;
     font-size: 26px;
 }
 
-.how-section1 h4: hover{
+.how-section1 h4:hover{
     color: #ffa500;
     font-weight: bold;
     font-size: 26px;
 }
 
-.how-section1 h4: active{
+.how-section1 h4:active{
     color: #ffa500;
     font-weight: bold;
     font-size: 26px;

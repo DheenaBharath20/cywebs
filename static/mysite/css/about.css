@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-body{
-    font-family: 'Didact Gothic', sans-serif;
-    background:white;
-  }
 
+.body{
+  background : #fafafa;
+  margin-top:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.text-muted {
+    color: #777;
+}
+.text-center {
+    text-align: center;
+}
+h4, .h4 {
+    font-size: 18px;
+}
+h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 100;
+    line-height: 2.1;
+    color: inherit;
+  
+
+}
   .tab{
       overflow: hidden;
       background-color: white;
@@ -353,10 +380,12 @@ section .section-title{
   .timeline-title {
     margin-top: 0;
     color: inherit;
+    font-size: 14px;
   }
   .timeline-body > p,
   .timeline-body > ul {
     margin-bottom: 0;
+    font-size: 12px;
   }
   .timeline-body > p + p {
     margin-top: 5px;
