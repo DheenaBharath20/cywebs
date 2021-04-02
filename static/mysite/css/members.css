@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-body{
-    background : #FF9933;
 
-  }
+html,body{
+  font-family: 'Lato', sans-serif !important; 
+}
+
 
   .tab{
       overflow: hidden;
@@ -13,6 +15,7 @@ body{
       position: absolute;
       width: 100%;
       border-style: solid;
+      font-family: 'Lato', sans-serif;
   }
 
   .tab img{

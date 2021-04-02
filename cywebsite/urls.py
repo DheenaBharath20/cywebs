@@ -31,12 +31,17 @@ urlpatterns = [
     path('wastemanagement/', include('wastemanagement.urls')),
     path('cleanup/', include('cleanup.urls')),
     path('envworkshop/', include('envworkshop.urls')),
+    path('sanitaryworkerswelfare/',include('sanitary.urls')),
+    path('orphanwelfare/', include('orphan.urls')),
+    path('naturaldisasterservices/', include('naturaldisaster.urls')),
+    path('villagedevelopment/',include('villagedev.urls')),
     path('about/', include('about.urls')),
     path('members/', include('members.urls')),
     path('donate/', include('donate.urls')),
     path('volunteer/', include('volunteer.urls')),
     path('others/', include('others.urls')),
     path('contact/', include('contact.urls')),
+
 
 ]
 

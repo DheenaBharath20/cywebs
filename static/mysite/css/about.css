@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 
-.body{
+html, body{
   background : #fafafa;
   margin-top:20px;
   font-family: 'Lato', sans-serif;
@@ -23,12 +23,14 @@ h4, .h4 {
 h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Lato',sans-serif; 
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit;
     font-weight: 100;
     line-height: 2.1;
     color: inherit;
+    font-family: 'Lato',sans-serif; 
   
 
 }
@@ -38,6 +40,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       position: absolute;
       width: 100%;
       border-style: solid;
+      font-family: 'Lato', sans-serif;
   }
 
   .tab img{
@@ -108,8 +111,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         z-index: 2; }
         .newsletter .content h2 {
         color: #243c4f;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        font-family: 'Lato',sans-serif; 
+       }
         .newsletter .content p{
+            font-family: 'Lato',sans-serif; 
             color:white;
         }
         .newsletter .content .form-control {
@@ -131,7 +137,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
         @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section{
-	padding: 60px 0;
+  font-family: 'Lato',sans-serif; 
+  padding: 60px 0;
 }
 section .section-title{
 	text-align:center;
@@ -254,6 +261,8 @@ section .section-title{
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+    font-family: 'Lato',sans-serif; 
+    text-transform: capitalize;
   }
   .timeline:before {
     top: 0;

@@ -4,12 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 
-.body{
-  padding: 10px;
-  font-family: 'Lato', sans-serif;
+html, body{
   background: #29285d;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
- 
+
+
+    
 
 .tab{
     overflow: hidden;
@@ -17,6 +20,7 @@
     position: absolute;
     width: 100%;
     border-style: solid;
+    font-family: 'Lato', sans-serif;
 }
 
 .tab img{
