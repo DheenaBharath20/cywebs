@@ -1,16 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-body{
-    font-family: 'Didact Gothic', sans-serif;
-    background:white;
-  }
 
+html, body{
+  background : #fafafa;
+  margin-top:20px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.text-muted {
+    color: #777;
+}
+.text-center {
+    text-align: center;
+}
+h4, .h4 {
+    font-size: 18px;
+}
+h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lato',sans-serif; 
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 100;
+    line-height: 2.1;
+    color: inherit;
+    font-family: 'Lato',sans-serif; 
+  
+
+}
   .tab{
       overflow: hidden;
       background-color: white;
       position: absolute;
       width: 100%;
       border-style: solid;
+      font-family: 'Lato', sans-serif;
   }
 
   .tab img{
@@ -81,8 +111,11 @@ body{
         z-index: 2; }
         .newsletter .content h2 {
         color: #243c4f;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        font-family: 'Lato',sans-serif; 
+       }
         .newsletter .content p{
+            font-family: 'Lato',sans-serif; 
             color:white;
         }
         .newsletter .content .form-control {
@@ -104,7 +137,8 @@ body{
 
         @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section{
-	padding: 60px 0;
+  font-family: 'Lato',sans-serif; 
+  padding: 60px 0;
 }
 section .section-title{
 	text-align:center;
@@ -227,6 +261,8 @@ section .section-title{
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+    font-family: 'Lato',sans-serif; 
+    text-transform: capitalize;
   }
   .timeline:before {
     top: 0;
@@ -353,10 +389,12 @@ section .section-title{
   .timeline-title {
     margin-top: 0;
     color: inherit;
+    font-size: 14px;
   }
   .timeline-body > p,
   .timeline-body > ul {
     margin-bottom: 0;
+    font-size: 12px;
   }
   .timeline-body > p + p {
     margin-top: 5px;
