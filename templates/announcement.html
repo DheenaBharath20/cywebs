@@ -1,0 +1,76 @@
+{% load static %}
+<!doctype html>
+<html>
+      <head>
+          <meta charset="utf-8">
+          <meta name="viewport"content="width=device-width, initial-scale=1.0">
+          <meta name="viewport"content="height=device-height, initial-scale=1.0">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+          <link href="{% static 'mysite/css/ann.css' %}" type="text/css" rel="stylesheet">
+          <link href="{% static 'mysite/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+          <link href="{% static 'mysite/css/styles.min.css' %}" type="text/css" rel="stylesheet">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+          <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+        </head>
+      <body>
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+          <script src="{% static 'mysite/js/menu.js' %}"></script>
+         <script src="{% static 'mysite/js/bootstrap.min.js' %}"></script>
+         <script src="{% static 'mysite/js/jquery-3.6.0.min.js' %}"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+          <div class="tab" id="myTab">
+            <a href="/home/"><img src="{% static 'mysite/img/cypng.png' %}">&nbsp;&nbsp;</a>
+            <a href="/about/">About</a>
+            <a href="/edu/">Education</a>
+            <a href="/env/">Environment</a>
+            <a href="/soc/">Social Welfare</a>
+            <a href="/others/">Others</a>
+            <a href="/members/">Members</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbTY4DXamVF2o9NKwWtbivj3B-zajR8SeUzFBooOnKMpQzjQ/viewform">Join Us</a>
+            <a href="/volunteer/">Volunteer</a>
+            <a href="/donate/">Donate</a>
+            <a href="/contact/">Contact us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars" aria-hidden = "true"></i>
+            </a>
+        </div>
+          <br><br><br><br><br><br><br><br>
+ 
+<div class="row d-flex justify-content-center mt-70 mb-70">
+    <div class="col-md-6">
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <h5 class="card-title">ANNOUNCEMENT</h5>
+                <div class="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                    {% for post in object_list %}
+                    <div class="vertical-timeline-item vertical-timeline-element">
+                        <div> <span class="vertical-timeline-element-icon bounce-in"> <i class="badge badge-dot badge-dot-xl badge-success"></i> </span>
+                            <div class="vertical-timeline-element-content bounce-in">
+                                <h4 class="timeline-title">{{post.title}}</h4>
+                                <p>{{post.content}}<a href="{{post.url}}" data-abc="true">POSTER</a></p> <span class="vertical-timeline-element-date">{{post.date}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
