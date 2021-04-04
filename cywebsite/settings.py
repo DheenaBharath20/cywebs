@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'orphan',
     'naturaldisaster',
     'villagedev',
+    'announcements',
     'about',
     'members',
     'donate',
